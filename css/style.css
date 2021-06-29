@@ -1,0 +1,95 @@
+/*
+Colors used:
+Primary Color (White): FFFFFF;
+Secondary Color (Black):353535;
+Accent Color (Grey):D9D9D9;
+Accent Color (Green):3C6E71;
+*/
+body {
+  background-color: #ffffff;
+  font-family: 'assistant', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #353535;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.125em;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #3C6E71;
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:hover {
+  color: #353535;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:focus {
+  color: #3C6E71;
+  text-decoration: underline;
+  background-color: #fff;
+  /* Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: #3C6E71;
+  background-color: #fff;
+}
+
+.button {
+  background-color: #3C6E71;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 32px;
+}
+
+.button:hover {
+  background-color: #fff;
+  border: 2px solid #3C6E71;
+  color: #3C6E71;
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
