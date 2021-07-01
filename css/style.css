@@ -93,3 +93,35 @@ a:active {
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
+#work {
+  padding-bottom: 48px;
+  border-bottom: 1px solid #FFFFFF;
+  padding-top: 28px;
+}
+
+#hero h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0.67rem 0;
+}
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+#hero span {
+  display: block;
+}
+
+#contact h4 {
+  text-align:center;
+  background-color: #FFFFFF;
+  padding-top: 16px;
+  margin-top: 48px;
+}
