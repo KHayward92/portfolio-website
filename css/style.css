@@ -94,6 +94,12 @@ a:active {
   text-decoration: none;
 }
 
+header {
+  background-color: #FFFFFF;
+  padding:10px;
+  margin: 10px
+}
+
 #work {
   padding-bottom: 48px;
   border-bottom: 1px solid #FFFFFF;
