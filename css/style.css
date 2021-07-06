@@ -95,21 +95,28 @@ a:active {
 }
 
 header {
+  position: fixed;
+  width: 100%;
   background-color: #FFFFFF;
-  padding:10px;
-  margin: 10px
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  padding: 10px 0 0;
 }
+
 
 #work {
   padding-bottom: 48px;
   border-bottom: 1px solid #FFFFFF;
   padding-top: 28px;
+  float: right;
 }
 
 #hero h3 {
   text-align: center;
+  /* Centers text */
   margin: 0;
-  padding: 0.67rem 0;
+  padding: 0.67em 0;
 }
 
 #hero {
@@ -126,8 +133,81 @@ header {
 }
 
 #contact h4 {
-  text-align:center;
+  text-align: center;
   background-color: #FFFFFF;
   padding-top: 16px;
   margin-top: 48px;
+}
+
+footer {
+  margin-bottom: 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+
+.linkedin {
+  display: inline-block;
+  width:48px
+}
+
+.email {
+  display: inline-block;
+  width:48px
+}
+
+.behance {
+  display: inline-block;
+  width:48px
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav {
+  display: inline-block;
+  width:100%
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3C6E71;
+}
+
+nav > ul > li > a:active {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+main {
+  padding-top: 200px;
 }
