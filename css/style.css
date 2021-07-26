@@ -5,6 +5,7 @@ Secondary Color (Black):353535;
 Accent Color (Grey):D9D9D9;
 Accent Color (Green):3C6E71;
 */
+
 body {
   background-color: #ffffff;
   font-family: 'assistant', sans-serif;
@@ -43,6 +44,7 @@ h4 {
 
 img {
   width: 100%;
+  border-radius:5px
 }
 
 a {
@@ -71,6 +73,7 @@ a:active {
 }
 
 .button {
+  display: inline-block;
   background-color: #3C6E71;
   color: #fff;
   text-transform: uppercase;
@@ -79,6 +82,8 @@ a:active {
   text-decoration: none;
   font-weight: 500;
   margin-top: 32px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button:hover {
@@ -86,6 +91,7 @@ a:active {
   border: 2px solid #3C6E71;
   color: #3C6E71;
   text-decoration: none;
+  opacity: 0.8;
 }
 
 .button:active {
@@ -96,12 +102,13 @@ a:active {
 
 header {
   position: fixed;
+  text-align:center;
   width: 100%;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-  padding: 10px 0 0;
+  padding: 20px 0 4;
 }
 
 
@@ -210,4 +217,92 @@ nav > ul > li > a:active {
 
 main {
   padding-top: 200px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+nav {
+    width: auto;
+    float: right;
+    margin-top: 7px;
+  }
+
+body {
+  font-size: 18px;
+  }
+
+#hero span {
+  display:block;
+  text-align: center;
+  }
+
+#hero span h3 {
+  text-align: center;
+  }
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-5 {
+  width: 50%;
+  float: right;
+}
+
+.col-md-7 {
+  width: 50%;
+  float: left;
+}
+
+[class*="col-"] {
+  float: left;
+  padding:10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding:10px;
+}
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.col-md-6 {
+  width:50%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
